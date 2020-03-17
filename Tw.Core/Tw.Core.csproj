@@ -19,19 +19,21 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\debug\</OutputPath>
+    <BaseIntermediateOutputPath>..\bin-int\$(AssemblyName)-obj</BaseIntermediateOutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\release\</OutputPath>
+    <BaseIntermediateOutputPath>..\bin-int\$(AssemblyName)-obj</BaseIntermediateOutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Id3">
-      <HintPath>..\ID3Library\Id3.dll</HintPath>
+      <HintPath>..\Vendor\id3library\Id3.dll</HintPath>
     </Reference>
     <Reference Include="Id3.Files">
-      <HintPath>..\ID3Library\Id3.Files.dll</HintPath>
+      <HintPath>..\Vendor\id3library\Id3.Files.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
