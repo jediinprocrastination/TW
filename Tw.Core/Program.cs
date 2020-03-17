@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
+
 using Id3;
 
-namespace TagWriter.Console
+namespace Tw.Core
 {
     class Program
     {

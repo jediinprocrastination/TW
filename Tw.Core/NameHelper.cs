@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace TagWriter.Console
+namespace Tw.Core
 {
     public static class NameHelper
     {
